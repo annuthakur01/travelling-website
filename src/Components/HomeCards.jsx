@@ -1,0 +1,101 @@
+import React from 'react'
+
+const TravelData = [
+    {
+        id: 1,
+        image: "/images/beach.png",
+        title: "Alaska: Westminster to Greenwich River Thames",
+        time: "Duration 2 hours",
+        transport: "Transport Facility",
+        plan: "Family Plan",
+        rating: "fa-solid fa-star",
+        reviews: "584 reviews",
+        rate: " $35.00",
+
+
+    },
+    {
+        id: 2,
+        image: "/images/Rect.png",
+        title: "Alaska: Vintage Double Decker Bus Tour & Thames ",
+        time: "Duration 2 hours",
+        transport: "Transport Facility",
+        plan: "Family Plan",
+        rating: "fa-solid fa-star",
+        reviews: "584 reviews",
+        rate: " $35.00",
+    },
+    {
+        id: 3,
+        image: "/images/Rectangle129.png",
+        title: "Alaska: Magic of London Tour with Afternoon Tea at ",
+        time: "Duration 2 hours",
+        transport: "Transport Facility",
+        plan: "Family Plan",
+        rating: "fa-solid fa-star",
+        reviews: "584 reviews",
+        rate: " $35.00",
+    },
+    {
+        id: 4,
+        image: "/images/road129.png",
+        title: "Alaska: Magic of London Tour with Afternoon Tea at  ",
+        time: "Duration 2 hours",
+        transport: "Transport Facility",
+        plan: "Family Plan",
+        rating: "fa-solid fa-star",
+        reviews: "584 reviews",
+        rate: " $35.00",
+    },
+   
+
+
+
+]
+
+const HomeCards = () => {
+    return (
+        <div className="flex lg:mt-64 md:mt-[450px] mt-[550px] justify-center items-center">
+            <div className="flex flex-wrap justify-center  gap-8">
+                {TravelData.map((props) => (
+                    <div className="p-4 shadow-md "
+                        key={props.id}>
+                        <img src={props.image} alt="" />
+                        <div className="p-2">
+                            <div>
+                                <h3 className="max-w-[200px] font-[400] mt-2 text-[#1C2B38]">{props.title}</h3>
+                                <div className="flex flex-col gap-1 mt-3">
+                                    <div className="text-[14px] flex items-center gap-2 text-[#495560] font-[400]"><i className="fa-solid fa-clock"></i><p>{props.time}</p></div>
+                                    <div className="text-[14px] flex items-center gap-2 text-[#495560] font-[400]"><i class="fa-solid fa-car"></i><p>{props.transport}</p></div>
+                                    <div className="text-[14px] flex items-center gap-2 text-[#495560] font-[400]"><i class="fa-solid fa-user"></i><p>{props.plan}</p></div>
+                                </div>
+                            </div>
+                            <div className="flex justify-between border-t-[1px] mt-2 items-center">
+                                <div className="mt-2">
+                                    <div>
+                                        <i className={props.rating}></i>
+                                        <i className={props.rating}></i>
+                                        <i className={props.rating}></i>
+                                        <i className={props.rating}></i>
+                                        <i className={props.rating}></i>
+                                    </div>
+                                    <p>{props.reviews}</p>
+                                </div>
+                                <div className="mt-2">
+                                    <p>{props.rate}</p>
+                                    <p>Per person</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                ))}
+            </div>
+        </div>
+
+    )
+}
+
+export default HomeCards
