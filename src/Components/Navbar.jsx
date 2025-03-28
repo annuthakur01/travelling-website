@@ -13,14 +13,12 @@ const Navbar = () => {
   return (
     <div className="">
       <div className="flex px-10 py-5 items-center justify-between  ">
-        <div className="">
-          tour guide
-        </div>
+        <img src="/images/tour guide.png" alt="logo" className="forced-color-adjust-auto"/>
         <ul className=" hidden lg:flex gap-10 items-center  ">
-          <li className="text-[#FFFFFF] font-[600] text-[15px]"><Link to="/">Home</Link></li>
-          <li className="text-[#FFFFFF] font-[600] text-[15px]"><Link to="/CityTour">City Tour</Link></li>
-          <li className="text-[#FFFFFF] font-[600] text-[15px]"><Link to="/CityList">City List</Link></li>
-          <li className="text-[#FFFFFF] font-[600] text-[15px]"><Link to="/MyProfile">My Profile</Link></li>
+          <li className=" font-[600] text-[15px]"><Link to="/">Home</Link></li>
+          <li className=" font-[600] text-[15px]"><Link to="/CityTour">City Tour</Link></li>
+          <li className=" font-[600] text-[15px]"><Link to="/CityList">City List</Link></li>
+          <li className=" font-[600] text-[15px]"><Link to="/MyProfile">My Profile</Link></li>
           <li className="text-[#2932ef] font-[600] text-[15px]"> <button className="px-6 py-2 bg-amber-300 rounded-[8px]">Sign  in </button></li>
         </ul>
         <button onClick={toggleMenu} className="md:hidden cursor-pointer   focus:outline-none">
