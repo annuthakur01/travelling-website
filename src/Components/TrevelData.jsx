@@ -54,7 +54,7 @@ const TrevelData = () => {
         <div className="flex mt-8 ">
             {TravelRating.map((props) => (
                 <div key={props.id} style={{ width: '100%', height: '', backgroundImage: 'url("/images/Rectangle 159.png")', backgroundRepeat: "no-repeat" }}>
-                    <div className="flex flex-wrap justify-center gap-24 lg:justify-between lg:px-[200px] px-[30px] py-[50px] items-center ">
+                    <div className="flex flex-wrap justify-center gap-10 lg:justify-between lg:px-[200px] px-[30px] py-[50px] items-center ">
                         <div className="">
                             <img src="/images/crousel-image.png" alt="" />
                         </div>
